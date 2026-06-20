@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://young-band-ba97.laodayizhi.workers.dev/ads-widget.js"></script>
+<title>香港电影片单-国产热门电影</title>
+  <meta name="description" content="香港电影片单提供高清热门影片免费在线观看入口，包含剧情简介、影片短评和相关推荐。">
+  <meta name="keywords" content="香港,国产电影,热门电影,在线观看,高清电影,免费观影">
+  <link rel="stylesheet" href="../assets/styles.css">
+  <script src="../assets/site.js" defer></script>
+</head>
+<body>
+<header class="site-header bg-stone-900">
+  <div class="header-inner">
+    <a class="brand" href="../index.html" aria-label="国产热门电影">
+      <span class="brand-icon">▶</span>
+      <span class="brand-text">
+        <strong>国产热门电影</strong>
+        <small>高清无广告观影</small>
+      </span>
+    </a>
+    <nav class="desktop-nav">
+        <a href="../index.html">首页</a>
+        <a href="../categories.html">分类</a>
+        <a href="../movies.html">片库</a>
+        <a href="../rankings.html">排行榜</a>
+        <a href="../search.html">搜索</a>
+    </nav>
+    <form class="top-search" action="../search.html" method="get" data-search-form>
+      <input name="q" type="search" placeholder="搜索影片、地区、题材" autocomplete="off">
+      <button type="submit">搜索</button>
+    </form>
+    <button class="menu-toggle" type="button" data-menu-button aria-label="展开菜单">☰</button>
+  </div>
+  <div class="mobile-panel" data-mobile-panel>
+    <form class="mobile-search" action="../search.html" method="get" data-search-form>
+      <input name="q" type="search" placeholder="搜索影片、地区、题材" autocomplete="off">
+      <button type="submit">搜索</button>
+    </form>
+    <nav>
+          <a href="../index.html">首页</a>
+          <a href="../categories.html">分类</a>
+          <a href="../movies.html">片库</a>
+          <a href="../rankings.html">排行榜</a>
+          <a href="../search.html">搜索</a>
+    </nav>
+  </div>
+</header>
+<main class="page-main">
+  <nav class="breadcrumb"><a href="../index.html">首页</a><span>/</span><a href="../categories.html">分类</a><span>/</span><span>香港电影片单</span></nav>
+  <section class="page-hero slim-hero">
+    <h1>香港电影片单</h1>
+    <p>香港电影片单汇聚高清热门影视内容，可通过筛选快速定位片名、题材、地区和年份，点击卡片进入详情页观看。</p>
+  </section>
+  <div class="filter-panel">
+  <div class="filter-field wide">
+    <label for="filter-keyword">搜索筛选</label>
+    <input id="filter-keyword" type="search" data-card-filter placeholder="输入片名、简介、标签">
+  </div>
+  <div class="filter-field">
+    <label for="filter-region">地区</label>
+    <select id="filter-region" data-select-filter="region">
+      <option value="">全部地区</option>
+          <option value="中国大陆">中国大陆</option>
+          <option value="美国">美国</option>
+          <option value="日本">日本</option>
+          <option value="中国香港">中国香港</option>
+          <option value="韩国">韩国</option>
+          <option value="中国台湾">中国台湾</option>
+          <option value="英国">英国</option>
+          <option value="法国">法国</option>
+          <option value="中国">中国</option>
+          <option value="泰国">泰国</option>
+          <option value="香港">香港</option>
+          <option value="印度">印度</option>
+          <option value="意大利">意大利</option>
+          <option value="西班牙">西班牙</option>
+          <option value="德国">德国</option>
+          <option value="俄罗斯">俄罗斯</option>
+          <option value="中国内地">中国内地</option>
+          <option value="澳大利亚">澳大利亚</option>
+          <option value="法国/比利时">法国/比利时</option>
+          <option value="台湾">台湾</option>
+          <option value="美国/英国">美国/英国</option>
+          <option value="挪威">挪威</option>
+          <option value="巴西">巴西</option>
+          <option value="中国香港/中国大陆">中国香港/中国大陆</option>
+          <option value="土耳其">土耳其</option>
+          <option value="瑞典">瑞典</option>
+          <option value="新加坡">新加坡</option>
+          <option value="英国/德国">英国/德国</option>
+          <option value="美国/加拿大">美国/加拿大</option>
+          <option value="墨西哥">墨西哥</option>
+    </select>
+  </div>
+  <div class="filter-field">
+    <label for="filter-genre">题材</label>
+    <select id="filter-genre" data-select-filter="genre">
+      <option value="">全部题材</option>
+          <option value="剧情">剧情</option>
+          <option value="悬疑">悬疑</option>
+          <option value="喜剧">喜剧</option>
+          <option value="爱情">爱情</option>
+          <option value="动作">动作</option>
+          <option value="奇幻">奇幻</option>
+          <option value="犯罪">犯罪</option>
+          <option value="惊悚">惊悚</option>
+          <option value="家庭">家庭</option>
+          <option value="科幻">科幻</option>
+          <option value="恐怖">恐怖</option>
+          <option value="历史">历史</option>
+          <option value="冒险">冒险</option>
+          <option value="战争">战争</option>
+          <option value="传记">传记</option>
+          <option value="古装">古装</option>
+          <option value="音乐">音乐</option>
+          <option value="动画">动画</option>
+          <option value="青春">青春</option>
+          <option value="运动">运动</option>
+          <option value="灾难">灾难</option>
+          <option value="武侠">武侠</option>
+          <option value="心理">心理</option>
+          <option value="文艺">文艺</option>
+          <option value="歌舞">歌舞</option>
+          <option value="女性">女性</option>
+          <option value="治愈">治愈</option>
+          <option value="黑色幽默">黑色幽默</option>
+          <option value="校园">校园</option>
+          <option value="纪录片">纪录片</option>
+          <option value="真人秀">真人秀</option>
+          <option value="公路">公路</option>
+          <option value="职场">职场</option>
+          <option value="都市">都市</option>
+          <option value="西部">西部</option>
+          <option value="年代">年代</option>
+          <option value="同性">同性</option>
+          <option value="儿童">儿童</option>
+          <option value="社会">社会</option>
+          <option value="伦理">伦理</option>
+    </select>
+  </div>
+  <div class="filter-field">
+    <label for="filter-year">年份</label>
+    <select id="filter-year" data-select-filter="year">
+      <option value="">全部年份</option>
+          <option value="2030">2030</option>
+          <option value="2029">2029</option>
+          <option value="2028">2028</option>
+          <option value="2027">2027</option>
+          <option value="2026">2026</option>
+          <option value="2025">2025</option>
+          <option value="2024">2024</option>
+          <option value="2023">2023</option>
+          <option value="2022">2022</option>
+          <option value="2021">2021</option>
+          <option value="2020">2020</option>
+          <option value="2019">2019</option>
+          <option value="2018">2018</option>
+          <option value="2017">2017</option>
+          <option value="2016">2016</option>
+          <option value="2015">2015</option>
+          <option value="2014">2014</option>
+          <option value="2013">2013</option>
+          <option value="2012">2012</option>
+          <option value="2011">2011</option>
+          <option value="2010">2010</option>
+          <option value="2009">2009</option>
+          <option value="2008">2008</option>
+          <option value="2007">2007</option>
+          <option value="2006">2006</option>
+          <option value="2005">2005</option>
+          <option value="2004">2004</option>
+          <option value="2003">2003</option>
+          <option value="2002">2002</option>
+          <option value="2001">2001</option>
+    </select>
+  </div>
+</div>
+  <section class="content-section">
+    <div class="movie-grid all-grid" data-card-list>
+<article class="movie-card" data-movie-card data-title="金鎗独行侠" data-region="香港" data-type="电影" data-year="1986" data-genre="动作 武侠" data-tags="枪战 西部片元素 复仇">
+  <a href="../movie/movie-0035.html" title="金鎗独行侠 在线观看">
+    <div class="cover-frame">
+      <img src="../35.jpg" alt="金鎗独行侠" loading="lazy">
+      <span class="play-mark">▶</span>
+    </div>
+    <div class="card-body">
+      <h3>金鎗独行侠</h3>
+      <p>一把可以连发的金枪打破了清末江湖的规矩,一个沉默的枪手用这把枪向背叛他的帮会展开了血腥复仇。</p>
+      <div class="card-meta">
+        <span>1986</span>
+        <span>香港</span>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="movie-card" data-movie-card data-title="冇心肝" data-region="香港" data-type="电影" data-year="2001" data-genre="犯罪 黑色幽默 剧情" data-tags="黑吃黑 器官黑市 荒诞 反英雄">
+  <a href="../movie/movie-0095.html" title="冇心肝 在线观看">
+    <div class="cover-frame">
+      <img src="../95.jpg" alt="冇心肝" loading="lazy">
+      <span class="play-mark">▶</span>
+    </div>
+    <div class="card-body">
+      <h3>冇心肝</h3>
+      <p>一个没有心脏起搏器就活不了的职业杀手,接了一单刺杀心脏外科医生的任务,而他的客户正是需要换心的黑帮老大。</p>
+      <div class="card-meta">
+        <span>2001</span>
+        <span>香港</span>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="movie-card" data-movie-card data-title="飞车歌舞三人组" data-region="香港" data-type="电影" data-year="1995" data-genre="动作 歌舞 喜剧" data-tags="飙车 怀旧 乌龙搭档 热血">
+  <a href="../movie/movie-0172.html" title="飞车歌舞三人组 在线观看">
+    <div class="cover-frame">
+      <img src="../22.jpg" alt="飞车歌舞三人组" loading="lazy">
+      <span class="play-mark">▶</span>
+    </div>
+    <div class="card-body">
+      <h3>飞车歌舞三人组</h3>
+      <p>三个被炒鱿鱼的特技演员,白天修车晚上练舞,只为干掉黑帮老大。</p>
+      <div class="card-meta">
+        <span>1995</span>
+        <span>香港</span>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="movie-card" data-movie-card data-title="女郎!女狼" data-region="香港" data-type="电影" data-year="1997" data-genre="动作喜剧" data-tags="女警 黑帮 变装">
+  <a href="../movie/movie-0195.html" title="女郎!女狼 在线观看">
+    <div class="cover-frame">
+      <img src="../45.jpg" alt="女郎!女狼" loading="lazy">
+      <span class="play-mark">▶</span>
+    </div>
+    <div class="card-body">
+      <h3>女郎!女狼</h3>
+      <p>一个超级女警和一头黑帮养的狼犬互换了身体,她必须赶在狼被打死前,教会“自己”的身体破案。</p>
+      <div class="card-meta">
+        <span>1997</span>
+        <span>香港</span>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="movie-card" data-movie-card data-title="黑白无间" data-region="香港" data-type="电影" data-year="2024" data-genre="犯罪 动作 悬疑" data-tags="卧底 双雄 黑帮 反转">
+  <a href="../movie/movie-0198.html" title="黑白无间 在线观看">
+    <div class="cover-frame">
+      <img src="../48.jpg" alt="黑白无间" loading="lazy">
+      <span class="play-mark">▶</span>
+    </div>
+    <div class="card-body">
+      <h3>黑白无间</h3>
+      <p>卧底警察与黑帮内鬼在最后交易中同时暴露,两人不得不联手杀出一条血路。</p>
+      <div class="card-meta">
+        <span>2024</span>
+        <span>香港</span>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="movie-card" data-movie-card data-title="猛鬼通宵陪住你" data-region="香港" data-type="电影" data-year="2024" data-genre="恐怖 喜剧" data-tags="便利店鬼魂 夜班惊魂 黑色幽默">
+  <a href="../movie/movie-0461.html" title="猛鬼通宵陪住你 在线观看">
+    <div class="cover-frame">
+      <img src="../11.jpg" alt="猛鬼通宵陪住你" loading="lazy">
+      <span class="play-mark">▶</span>
+    </div>
+    <div class="card-body">
+      <h3>猛鬼通宵陪住你</h3>
+      <p>一家24小时便利店的夜班店员发现,凌晨三点后进来的顾客全是鬼——而且它们只想买关东煮。</p>
+      <div class="card-meta">
+        <span>2024</span>
+        <span>香港</span>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="movie-card" data-movie-card data-title="热线诉心声粤语" data-region="香港" data-type="电影" data-year="1993" data-genre="爱情 剧情 文艺" data-tags="深夜电台 声控 都市孤独症 电话情缘 粤语原声">
+  <a href="../movie/movie-0521.html" title="热线诉心声粤语 在线观看">
+    <div class="cover-frame">
+      <img src="../71.jpg" alt="热线诉心声粤语" loading="lazy">
+      <span class="play-mark">▶</span>
+    </div>
+    <div class="card-body">
+      <h3>热线诉心声粤语</h3>
+      <p>香港午夜电台节目“心声热线”的女主持,爱上了那个总在凌晨三点来电、从不留名的低沉男声。</p>
+      <div class="card-meta">
+        <span>1993</span>
+        <span>香港</span>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="movie-card" data-movie-card data-title="地老天荒" data-region="香港" data-type="电影" data-year="1992" data-genre="爱情 剧情 文艺" data-tags="经典 怀旧 错过 时代变迁">
+  <a href="../movie/movie-0560.html" title="地老天荒 在线观看">
+    <div class="cover-frame">
+      <img src="../110.jpg" alt="地老天荒" loading="lazy">
+      <span class="play-mark">▶</span>
+    </div>
+    <div class="card-body">
+      <h3>地老天荒</h3>
+      <p>六十年代的石板街,裁缝学徒与富家千金的爱情,抵不过一场跨越海峡的离别。</p>
+      <div class="card-meta">
+        <span>1992</span>
+        <span>香港</span>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="movie-card" data-movie-card data-title="超危险人物" data-region="香港" data-type="电影" data-year="2025" data-genre="动作 犯罪" data-tags="卧底 黑帮 兄弟情 背叛 枪战">
+  <a href="../movie/movie-0571.html" title="超危险人物 在线观看">
+    <div class="cover-frame">
+      <img src="../121.jpg" alt="超危险人物" loading="lazy">
+      <span class="play-mark">▶</span>
+    </div>
+    <div class="card-body">
+      <h3>超危险人物</h3>
+      <p>为了摧毁新型毒品网络,卧底警察不得不成为比罪犯更危险的“超危险人物”。</p>
+      <div class="card-meta">
+        <span>2025</span>
+        <span>香港</span>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="movie-card" data-movie-card data-title="左轮右你" data-region="香港" data-type="电影" data-year="2025" data-genre="动作 悬疑 双雄" data-tags="左轮手枪 镜像身份 记忆交换 黑吃黑 雨夜枪战">
+  <a href="../movie/movie-0584.html" title="左轮右你 在线观看">
+    <div class="cover-frame">
+      <img src="../134.jpg" alt="左轮右你" loading="lazy">
+      <span class="play-mark">▶</span>
+    </div>
+    <div class="card-body">
+      <h3>左轮右你</h3>
+      <p>两颗被互换的子弹,让一名杀手与一名警察在脑中共享了对方的记忆与杀意。</p>
+      <div class="card-meta">
+        <span>2025</span>
+        <span>香港</span>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="movie-card" data-movie-card data-title="黑帮大斗法" data-region="香港" data-type="电影" data-year="2024" data-genre="动作 喜剧" data-tags="黑帮 卧底 乌龙 爆笑 枪战">
+  <a href="../movie/movie-0752.html" title="黑帮大斗法 在线观看">
+    <div class="cover-frame">
+      <img src="../2.jpg" alt="黑帮大斗法" loading="lazy">
+      <span class="play-mark">▶</span>
+    </div>
+    <div class="card-body">
+      <h3>黑帮大斗法</h3>
+      <p>三名互不相识的卧底警察同时潜入黑帮,却因为互相不知道对方身份而展开了一场乌龙内斗。</p>
+      <div class="card-meta">
+        <span>2024</span>
+        <span>香港</span>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="movie-card" data-movie-card data-title="箭侠恩仇粤语" data-region="香港" data-type="剧集" data-year="1996" data-genre="武侠 古装 动作" data-tags="复仇 弓箭 江湖恩怨 兄弟情">
+  <a href="../movie/movie-0754.html" title="箭侠恩仇粤语 在线观看">
+    <div class="cover-frame">
+      <img src="../4.jpg" alt="箭侠恩仇粤语" loading="lazy">
+      <span class="play-mark">▶</span>
+    </div>
+    <div class="card-body">
+      <h3>箭侠恩仇粤语</h3>
+      <p>沉默箭手为报灭门之仇潜入敌营,却发现自己要杀的人正是失散多年的亲兄弟。</p>
+      <div class="card-meta">
+        <span>1996</span>
+        <span>香港</span>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="movie-card" data-movie-card data-title="真假僵尸" data-region="香港" data-type="电影" data-year="2025" data-genre="恐怖 喜剧 奇幻" data-tags="僵尸 冒充 道士 搞笑 乌龙">
+  <a href="../movie/movie-0879.html" title="真假僵尸 在线观看">
+    <div class="cover-frame">
+      <img src="../129.jpg" alt="真假僵尸" loading="lazy">
+      <span class="play-mark">▶</span>
+    </div>
+    <div class="card-body">
+      <h3>真假僵尸</h3>
+      <p>一个穷酸道士本想假装僵尸吓人骗钱,没想到村里真的来了几只清朝僵尸,他只能假戏真做。</p>
+      <div class="card-meta">
+        <span>2025</span>
+        <span>香港</span>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="movie-card" data-movie-card data-title="低俗僵尸玩出征" data-region="香港" data-type="电影" data-year="2025" data-genre="喜剧 恐怖" data-tags="僵尸 黑色幽默 警匪 恶搞 B级片">
+  <a href="../movie/movie-0966.html" title="低俗僵尸玩出征 在线观看">
+    <div class="cover-frame">
+      <img src="../66.jpg" alt="低俗僵尸玩出征" loading="lazy">
+      <span class="play-mark">▶</span>
+    </div>
+    <div class="card-body">
+      <h3>低俗僵尸玩出征</h3>
+      <p>古惑仔意外唤醒清朝僵尸军团,本想靠他们称霸铜锣湾,结果僵尸们只想考公务员。</p>
+      <div class="card-meta">
+        <span>2025</span>
+        <span>香港</span>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="movie-card" data-movie-card data-title="李碧华鬼魅系列:奇幻夜" data-region="香港" data-type="电影" data-year="2024" data-genre="恐怖 奇幻 爱情" data-tags="都市传说 因果报应 三段式 李碧华式妖异">
+  <a href="../movie/movie-1107.html" title="李碧华鬼魅系列:奇幻夜 在线观看">
+    <div class="cover-frame">
+      <img src="../57.jpg" alt="李碧华鬼魅系列:奇幻夜" loading="lazy">
+      <span class="play-mark">▶</span>
+    </div>
+    <div class="card-body">
+      <h3>李碧华鬼魅系列:奇幻夜</h3>
+      <p>三个发生在中元节的都市怪谈:电梯里的红衣女、二手市场的古董镜、以及一碗永远吃不完的云吞面。</p>
+      <div class="card-meta">
+        <span>2024</span>
+        <span>香港</span>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="movie-card" data-movie-card data-title="铁金刚大战特务飞龙" data-region="香港" data-type="电影" data-year="1992" data-genre="动作 犯罪 科幻" data-tags="港产片 科幻改造 硬桥硬马 B级片">
+  <a href="../movie/movie-1111.html" title="铁金刚大战特务飞龙 在线观看">
+    <div class="cover-frame">
+      <img src="../61.jpg" alt="铁金刚大战特务飞龙" loading="lazy">
+      <span class="play-mark">▶</span>
+    </div>
+    <div class="card-body">
+      <h3>铁金刚大战特务飞龙</h3>
+      <p>亚洲最強特警“铁金刚”为救被绑架的科学家女儿,必须击败被改造为半机器人、代号“飞龙”的昔日同门。</p>
+      <div class="card-meta">
+        <span>1992</span>
+        <span>香港</span>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="movie-card" data-movie-card data-title="呢个校园选乜鬼" data-region="香港" data-type="电影" data-year="2019" data-genre="喜剧 恐怖 青春" data-tags="校园 选秀 粤语 黑色幽默">
+  <a href="../movie/movie-1234.html" title="呢个校园选乜鬼 在线观看">
+    <div class="cover-frame">
+      <img src="../34.jpg" alt="呢个校园选乜鬼" loading="lazy">
+      <span class="play-mark">▶</span>
+    </div>
+    <div class="card-body">
+      <h3>呢个校园选乜鬼</h3>
+      <p>香港某中学举办才艺大赛,获胜者可以免考DSE,但前三名选手开始陆续变成自己表演的道具。</p>
+      <div class="card-meta">
+        <span>2019</span>
+        <span>香港</span>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="movie-card" data-movie-card data-title="痞子无间道粤语" data-region="香港" data-type="剧集" data-year="2025" data-genre="警匪 动作 悬疑" data-tags="卧底 黑帮 粤语原声 双雄">
+  <a href="../movie/movie-1388.html" title="痞子无间道粤语 在线观看">
+    <div class="cover-frame">
+      <img src="../38.jpg" alt="痞子无间道粤语" loading="lazy">
+      <span class="play-mark">▶</span>
+    </div>
+    <div class="card-body">
+      <h3>痞子无间道粤语</h3>
+      <p>两个互相不知道对方是卧底的警察,在同一黑帮里相爱相杀十八个月。</p>
+      <div class="card-meta">
+        <span>2025</span>
+        <span>香港</span>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="movie-card" data-movie-card data-title="刮龙医生登龙术" data-region="香港" data-type="电影" data-year="1989" data-genre="喜剧 剧情" data-tags="市井智慧 小人物逆袭 港式讽刺">
+  <a href="../movie/movie-1727.html" title="刮龙医生登龙术 在线观看">
+    <div class="cover-frame">
+      <img src="../77.jpg" alt="刮龙医生登龙术" loading="lazy">
+      <span class="play-mark">▶</span>
+    </div>
+    <div class="card-body">
+      <h3>刮龙医生登龙术</h3>
+      <p>一位落魄中医靠“刮痧”意外治好黑帮大佬,从此被卷入一场荒诞的权力上升通道。</p>
+      <div class="card-meta">
+        <span>1989</span>
+        <span>香港</span>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="movie-card" data-movie-card data-title="买凶杀自己" data-region="香港" data-type="电影" data-year="2026" data-genre="黑色喜剧 犯罪 悬疑" data-tags="自杀 雇佣杀手 绝症 意外反转">
+  <a href="../movie/movie-1742.html" title="买凶杀自己 在线观看">
+    <div class="cover-frame">
+      <img src="../92.jpg" alt="买凶杀自己" loading="lazy">
+      <span class="play-mark">▶</span>
+    </div>
+    <div class="card-body">
+      <h3>买凶杀自己</h3>
+      <p>绝症患者雇凶杀自己,杀手接了单,他却忽然被告知病是误诊。</p>
+      <div class="card-meta">
+        <span>2026</span>
+        <span>香港</span>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="movie-card" data-movie-card data-title="你好,翠小姐" data-region="香港" data-type="电影" data-year="2024" data-genre="剧情 悬疑" data-tags="AI 已故亲人 数字克隆 家庭创伤">
+  <a href="../movie/movie-1868.html" title="你好,翠小姐 在线观看">
+    <div class="cover-frame">
+      <img src="../68.jpg" alt="你好,翠小姐" loading="lazy">
+      <span class="play-mark">▶</span>
+    </div>
+    <div class="card-body">
+      <h3>你好,翠小姐</h3>
+      <p>丧母十年的女儿购买了一款AI服务,可以模拟母亲的声音和语气,却慢慢发现“母亲”知道一些绝对不可能知道的事。</p>
+      <div class="card-meta">
+        <span>2024</span>
+        <span>香港</span>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="movie-card" data-movie-card data-title="赌豪" data-region="香港" data-type="电影" data-year="1991" data-genre="动作 犯罪 赌术" data-tags="赌神 高进 兄弟情 复仇">
+  <a href="../movie/movie-1959.html" title="赌豪 在线观看">
+    <div class="cover-frame">
+      <img src="../9.jpg" alt="赌豪" loading="lazy">
+      <span class="play-mark">▶</span>
+    </div>
+    <div class="card-body">
+      <h3>赌豪</h3>
+      <p>赌神高进的同门师弟“赌豪”重出江湖,为报断指之仇,他用一套失传的“意念控牌术”挑战东南亚赌王,赌注是命。</p>
+      <div class="card-meta">
+        <span>1991</span>
+        <span>香港</span>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="movie-card" data-movie-card data-title="怪妳过分美丽" data-region="香港" data-type="剧集" data-year="1998" data-genre="爱情 悬疑" data-tags="娱乐圈 替身 复仇 经典">
+  <a href="../movie/movie-1988.html" title="怪妳过分美丽 在线观看">
+    <div class="cover-frame">
+      <img src="../38.jpg" alt="怪妳过分美丽" loading="lazy">
+      <span class="play-mark">▶</span>
+    </div>
+    <div class="card-body">
+      <h3>怪妳过分美丽</h3>
+      <p>当红女星离奇死亡,一个和她长得一模一样的新人横空出世,究竟是粉丝的疯狂模仿,还是死者精心策划的“借尸还魂”?</p>
+      <div class="card-meta">
+        <span>1998</span>
+        <span>香港</span>
+      </div>
+    </div>
+  </a>
+</article>
+    </div>
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="footer-grid">
+    <section>
+      <h2>国产热门电影</h2>
+      <p>国产热门电影网站提供最新最全的国产电影在线免费观看。高清画质，无广告干扰，尽享纯净观影体验。汇聚经典国产大片和最新上映电影。</p>
+    </section>
+    <section>
+      <h2>热门地区</h2>
+      <ul>
+          <li><a href="../category/region-001.html">中国大陆</a></li>
+          <li><a href="../category/region-002.html">美国</a></li>
+          <li><a href="../category/region-003.html">日本</a></li>
+          <li><a href="../category/region-004.html">中国香港</a></li>
+      </ul>
+    </section>
+    <section>
+      <h2>热门题材</h2>
+      <ul>
+          <li><a href="../category/genre-001.html">剧情</a></li>
+          <li><a href="../category/genre-002.html">悬疑</a></li>
+          <li><a href="../category/genre-003.html">喜剧</a></li>
+          <li><a href="../category/genre-004.html">爱情</a></li>
+      </ul>
+    </section>
+    <section>
+      <h2>更多入口</h2>
+      <ul>
+        <li><a href="../rankings.html">热播排行榜</a></li>
+        <li><a href="../movies.html">高清片库</a></li>
+        <li><a href="../service.html">观影服务</a></li>
+        <li><a href="../copyright.html">版权声明</a></li>
+      </ul>
+    </section>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 国产热门电影</span>
+    <span>高清观影 · 热门电影 · 经典大片</span>
+  </div>
+</footer>
+<button class="back-top" type="button" data-back-top aria-label="回到顶部">↑</button>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?60fa60a3da050a73eefefaaebe0afaf5";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>
